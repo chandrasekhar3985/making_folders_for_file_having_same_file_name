@@ -1,6 +1,6 @@
 #!/bin/bash
 #Asking user where want to rename files or not
-zenity --question --text='Do you like create a folder as per file name and move file in to that folder' --ok-label=SureDo --cancel-label=NotNow
+zenity --question --text='<span foreground="#ff1493" font="28">\n\n\n\n\n\nDo You want to make folder as per file name. \n\n And Move file into that Folder.</span>' --width="600" --height="500" --ok-label="SURE DO" --cancel-label="NOT NOW"
 if [ $? == 1 ]; then exit; fi
 #Asking User to Select the Source folder (sf)
 sf=$(zenity --file-selection --directory --title='Choose Source Directory')
